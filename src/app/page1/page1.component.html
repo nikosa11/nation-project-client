@@ -1,0 +1,28 @@
+
+<body>
+
+  
+    <table id="customers">
+      <tr>
+        <th>Name</th>
+        <th>Area</th>
+        <th>Country Code2</th>
+      </tr>
+      <tr *ngFor="let country of countries">
+        <td>{{country.name}}</td>
+        <td>{{country.area}}</td>
+        <td>{{country.country_code2}}</td>
+        <button class="button-68" role="button" (click)="openLanguageModal(country.country_id)">Display Languages</button>
+  
+      </tr>
+     
+    </table>
+    
+    </body>
+  <!-- <div *ngFor="let country of countries">
+    <div>{{country.name}}</div>
+  </div> -->
+  
+  
+  
+  

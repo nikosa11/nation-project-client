@@ -1,0 +1,24 @@
+<body>
+
+  
+    <table id="customers">
+      <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Country Code3</th>
+        <th>Population</th>
+        <th>Gdp</th>
+
+      </tr>
+      <tr *ngFor="let gdpPerPop of gdpPerPopulation">
+        <td>{{gdpPerPop.name}}</td>
+        <td>{{gdpPerPop.year}}</td>
+        <td>{{gdpPerPop.countryCode3}}</td>
+        <td>{{gdpPerPop.population}}</td>
+        <td>{{gdpPerPop.gdp}}</td>
+
+      </tr>
+     
+    </table>
+    
+</body>

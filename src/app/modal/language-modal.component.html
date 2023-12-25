@@ -1,0 +1,17 @@
+<table id="lang"  *ngIf="languages">
+  <tr>
+    <th>{{ getTitle(languages) }}</th>
+  </tr>
+  <tr *ngFor="let language of languages">
+    <td>{{language.language}}</td>
+
+  </tr>
+ 
+</table>
+<table id="lang"  *ngIf="!languages">
+  <tr>
+    <th>There is no Language</th>
+  </tr>
+
+ 
+</table>
